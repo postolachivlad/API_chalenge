@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_02_11_153745) do
 
   create_table "messages", id: :string, limit: 36, force: :cascade do |t|
     t.string "message"
-    t.integer "counter"
+    t.integer "counter", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
