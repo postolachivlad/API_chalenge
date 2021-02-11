@@ -1,1 +1,1 @@
-json.extract! @message, :id, :message, :counter
+json.extract! @message, :id, :content, :counter

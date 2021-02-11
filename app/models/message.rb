@@ -1,7 +1,7 @@
 class Message < ApplicationRecord
   before_create :set_uuid
 
-  validates :message, presence: true,
+  validates :content, presence: true,
                       format: { without: /<.+?>/, message: 'HTML tags not allowed' },
                       length: { maximum: 256, too_long: '256 characters is the maximum allowed' }
 
